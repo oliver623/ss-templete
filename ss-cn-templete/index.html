@@ -1,0 +1,582 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta
+            name="viewport"
+            id="viewport"
+            content="width=device-width, initial-scale=1, minimum-scale=1,
+            maximum-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>SS中文官网</title>
+
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+        <script type="text/javascript" src="js/theme_trust.js"></script>
+        <script src="js/banner.js"></script>
+        <style type="text/css">
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .iw_poi_title {
+            color: #cc5522;
+            font-size: 14px;
+            font-weight: bold;
+            overflow: hidden;
+            padding-right: 13px;
+            white-space: nowrap;
+        }
+
+        .iw_poi_content {
+            font: 12px arial, sans-serif;
+            overflow: visible;
+            padding-top: 4px;
+            white-space: -moz-pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script>
+        const $ = jQuery
+        jQuery(document).ready(function () {
+            jQuery('#openSidebar').click(function () {
+                jQuery('.wrapper').toggleClass('openNav')
+            })
+            jQuery('#menu a').click(function () {
+                jQuery('.wrapper').removeClass('openNav')
+            })
+
+            $('#owl-demo')
+                .owlCarousel({
+                    items: 1,
+                    navigation: true,
+                    navigationText: ['上一个', '下一个'],
+                    autoPlay: 3000,
+                    stopOnHover: true,
+                })
+                .hover(
+                    function () {
+                        $('.owl-buttons').show()
+                    },
+                    function () {
+                        $('.owl-buttons').hide()
+                    },
+                )
+        })
+    </script>
+        <script type="text/javascript"
+            src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+        <style type="text/css">
+        html,
+        body,
+        wrapper {
+            height: 100%;
+        }
+    </style>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="sidebar">
+                <div class="clearfix k1120">
+                    <div class="navBox" id="openSidebar">
+                        <a href="javascript:void(0)" class="navOpen"></a>
+                    </div>
+                    <div id="menu">
+                        <ul class="clearfix">
+                            <li>
+                                <a href="#home" class="nav_home current">
+                                    <span>
+                                        首页
+                                        <br />
+                                            <b>Home</b>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#services" class="nav_services">
+                                        <span>
+                                            海外仓服务
+                                            <br />
+                                            <b>Services</b>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#businessProcess"
+                                        class="nav_businessProcess">
+                                        <span>
+                                            业务流程
+                                            <br />
+                                            <b>Process</b>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#layout" class="nav_layout">
+                                        <span>
+                                            海外仓布局
+                                            <br />
+                                                <b>Layout</b>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#cooperationCase"
+                                            class="nav_cooperationCase">
+                                            <span>
+                                                合作案例
+                                                <br />
+                                                <b>Cases</b>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#news" class="nav_news">
+                                            <span>
+                                                行业资讯
+                                                <br />
+                                                <b>News</b>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#about" class="nav_about">
+                                            <span>
+                                                关于我们
+                                                <br />
+                                                <b>About us</b>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <!-- <li>
+                                        <a href="#contact" class="nav_contact">
+                                            <span>
+                                                联系我们
+                                                <br />
+                                                <b>Contact us</b>
+                                            </span>
+                                        </a>
+                                    </li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pageMain">
+                        <div id="header">
+                            <div class="k1120 clearfix"><a href="index.html" id="logo">logo</a></div>
+                        </div>
+                        <!-- 轮播图 -->
+                        <div id="home" class="banner scrol-page">
+                            <div id="owl-demo" class="owl-carousel">
+                                <a class="item" target="_blank" href="">
+                                    <img src="ss-images/lbt/lbt-1.jpg" alt="" />
+                                </a>
+                                <a class="item" target="_blank" href="">
+                                    <img src="ss-images/lbt/lbt-2.jpg" alt="" />
+                                </a>
+                                <a class="item" target="_blank" href="">
+                                    <img src="ss-images/lbt/lbt-3.jpg" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                        <!-- 海外仓服务 -->
+                        <div id="services" class="scrol-page">
+                            <h2 class="title"><span>海外仓服务</span></h2>
+                            <h5 class="infoText">
+                                海外仓服务包含一件代发、FBA中转、退仓换标、FBA补货、增值服务处理等。</h5>
+                            <div class="servicesBox">
+                                <ul class="k1120 clearfix">
+                                    <li>
+                                        <div class="servicesBoxList">
+                                            <div class="servicesBoxIcon">
+                                                <a href="service_1.html">
+                                                    <i class="servicesIcon_1">
+                                                    </i>
+                                                </a></div>
+                                            <div style="margin-left: 20px;">
+                                                <h3>仓储配送</h3>
+                                                <p>-矩阵级仓群</p>
+                                                <p>-配送时效短</p>
+                                                <p>-尾程价格优</p>
+                                                <p>-直接对接仓库</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="servicesBoxList">
+                                            <div class="servicesBoxIcon">
+                                                <a href="service_2.html">
+                                                    <i
+                                                        class="servicesIcon_2"></i>
+                                                </a></div>
+                                            <div style="margin-left: 20px;">
+                                                <h3>一件代发</h3>
+                                                <p>-发货及时</p>
+                                                <p>-时效更短</p>
+                                                <p>-运费更优</p>
+                                                <p>-库存准确</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="servicesBoxList">
+                                            <div class="servicesBoxIcon">
+                                                <a href="service_3.html">
+                                                    <i
+                                                        class="servicesIcon_3"></i>
+                                                </a></div>
+                                            <div style="margin-left: 20px;">
+                                                <h3>FBA中转</h3>
+                                                <p>-响应迅速</p>
+                                                <p>-补货及时</p>
+                                                <p>-中转高效</p>
+                                                <p>-操作灵活</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="servicesBoxList">
+                                            <div class="servicesBoxIcon">
+                                                <a href="service_4.html">
+                                                    <i
+                                                        class="servicesIcon_4"></i>
+                                                </a></div>
+                                            <div style="margin-left: 20px;">
+                                                <h3>退仓换标</h3>
+                                                <p>-经验丰富</p>
+                                                <p>-价格公正</p>
+                                                <p>-一货多销</p>
+                                                <p>-沟通无忧</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- 业务流程 -->
+                        <div id="businessProcess" class="scrol-page">
+                            <h2 class="title"><span>业务流程</span></h2>
+                            <h5 class="infoText">
+                                流程化管理，以求在最短时间内为客户提供最优质的服务
+                            </h5>
+                            <div class="i_mc" style="margin-top: 50px;">
+                                <img src="ss-images/bg_c.png" alt=""/>
+                                <ul class="clearfix-out">
+                                    <li>
+                                        <div class="name">入库预报</div>
+                                        <p class="des">入库预报就是指卖家在将国内或者亚马逊仓库的产品发到海外仓库时，
+                                            需要在海外仓系统中填写所发货物的详情，以便仓库工作人员做入库前的准备以及接收入库。
+                                        </p>
+                                    </li>
+                                    <li class="odd">
+                                        <div class="name">查看库存</div>
+                                        <p class="des">
+                                            货物入库之后，卖家可在海外仓
+
+                                            系统中随时查看货物的存储数量
+
+                                            以及存储仓库
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <div class="name">创建出库</div>
+                                        <p class="des">
+                                            卖家可根据需求，在系统中操作将货物整批发往FBA仓库或者一件代发至买家手中。
+                                            极速海外仓系统已接入多家平台，实时同步销售订单，一键操作发货。
+                                        </p>
+                                    </li>
+                                    <li class="odd">
+                                        <div class="name">查看费用</div>
+                                        <p class="des">
+                                            卖家可在海外仓系统中查看各项支出的明细。极速海外仓价格公开合理，
+                                            杜绝乱收费现象。
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- 海外仓布局 -->
+                        <div id="layout" class="scrol-page">
+                            <h2 class="title"><span>海外仓布局</span></h2>
+                            <h5 class="infoText">
+                                目前已在美国本土美西、美东、美中自建面积20000㎡的海外仓。
+                            </h5>
+                            <div style="width: 100%; margin-top: 40px;">
+                                <img src="ss-images/hwcbj/hwcbj.jpg" alt=""
+                                    style="width: 100%;">
+                            </div>
+                        </div>
+                        <!-- 合作案例 -->
+                        <div id="cooperationCase" class="scrol-page">
+                            <h2 class="title"><span>合作案例</span></h2>
+                            <h5 class="infoText">
+                                系统已集成多家快递公司、销售平台
+                            </h5>
+                            <div class="case k1120">
+                                <ul class="clearfix">
+                                    <li>
+                                        <div class="view-tenth">
+                                            <img
+                                                src="ss-images/hzaltp/amazon.jpg"
+                                                />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="view-tenth">
+                                            <img
+                                                src="ss-images/hzaltp/walmart.jpg"
+                                                />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="view-tenth">
+                                            <img
+                                                src="ss-images/hzaltp/Wayfair.jpg"
+                                                />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="view-tenth">
+                                            <img src="ss-images/hzaltp/UPS.jpg"
+                                                />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="view-tenth">
+                                            <img
+                                                src="ss-images/hzaltp/Fedex.jpg"
+                                                />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="view-tenth">
+                                            <img src="ss-images/hzaltp/USPS.jpg"
+                                                />
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- 行业资讯 -->
+                        <div id="news" class="scrol-page">
+                            <div class="k1120">
+                                <h2 class="title"><span>行业资讯</span></h2>
+                                <h5 class="infoText">
+                                    您可以通过以下新闻与公司动态进一步了解我们。我们所签约的客户，无论他们的项目是大或者是小，我们都将提供100%的服务
+                                </h5>
+                                <div class="newsList">
+                                    <ul class="clearfix">
+                                        <li>
+                                            <div class="newsListBox">
+                                                <h4><a href="newslist_1.html">海外仓和虚拟海外仓的区别是什么？有何优劣？
+                                                    </a></h4>
+                                                <p class="newsViewText">
+                                                    刚入行跨境电商的时候，只知道海外仓，听见“虚拟”两个字，有的新手卖家可能就觉得...
+                                                </p>
+                                                <p class="newsViewFoot">
+                                                    <a href="newslist_1.html"
+                                                        class="newsListView">查看详情</a>
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="newsListBox">
+                                                <h4><a href="newslist_2.html"
+                                                        target="_blank">跨境电商独立站如何选择海外仓</a></h4>
+                                                <p class="newsViewText">
+                                                    海外仓近两年热度高涨，因为疫情影响，物流直发的成本迅速...
+                                                </p>
+                                                <p class="newsViewFoot">
+                                                    <a href="newslist_2.html"
+                                                        target="_blank"
+                                                        class="newsListView">查看详情</a>
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="newsListBox">
+                                                <h4><a href="newslist_3.html"
+                                                        target="_blank">布局海外仓，先发制人
+                                                    </a></h4>
+                                                <p class="newsViewText">
+                                                    作为跨境电商卖家，相信大家都知道物流的时效对销量的影响尤为重要。
+                                                    物流时效短...
+                                                </p>
+                                                <p class="newsViewFoot">
+                                                    <a href="newslist_3.html"
+                                                        target="_blank"
+                                                        class="newsListView">查看详情</a>
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="newsListBox">
+                                                <h4><a href="newslist_4.html"
+                                                        target="_blank">沃尔玛的账号类型及其优势</a></h4>
+                                                <p class="newsViewText">
+                                                    沃尔玛卖家越来越多。虽然门槛比起亚马逊有点高，但是各位经历苦难后顽强且...
+                                                </p>
+                                                <p class="newsViewFoot">
+                                                    <a href="newslist_4.html"
+                                                        target="_blank"
+                                                        class="newsListView">查看详情</a>
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 关于我们 -->
+                        <div id="about" class="scrol-page">
+                            <h2 class="title"><span>关于我们</span></h2>
+                            <div class="k1120">
+                                <div class="aboutBox">
+                                    <p>
+                                        极速海外仓（Speeder Solutions）成立于2015年，凭借在物流运输和客户服务方面的卓越表现，
+                                        以及在处理退换货和维修方面的专业知识，
+                                        我们在美国市场口碑一直处于TOP2的位置。
+                                    </p>
+                                    <p>
+                                        极速海外仓主营电子产品，家居，小家电等品类的北美海外仓业务，包括仓储配送、一件代发、
+                                        FBA中转、退仓换标和加工售后等服务。在美国本土美西、美东、美中四仓布局，多仓联动协同，物流配送覆盖全美两日达。
+                                    </p>
+                                    <p>
+                                        多年来，我们一直致力于让每一位跨境电商人更轻松，更高效地处理订单，为客户提供更佳的体验，树立最优的行业口碑。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div id="contact" class="scrol-page">
+                            <h2 class="title"><span>联系我们</span></h2>
+                            <div class="infoText">
+                                如果您需要超越您所期望的网站设计公司，如果您需要一个可以长期合作与信任的工作团队，那么请联系我们，我们期待您的来电，谢谢！
+                            </div>
+                            <div class="message">
+                                <div class="k1120 clearfix">
+                                    <div class="messageRow_1">
+                                        <div class="messageBox">
+                                            <h3>告诉我们您的需求</h3>
+                                            <h4>在线填写需求，我们将尽快为您答疑解惑。</h4>
+                                            <!-- <p>网站建设QQ：497021485</p>
+                                            <p>业务咨询QQ：497021485</p>
+                                            <p>售后服务QQ：497021485</p>
+                                            <p>电话：0551-82635020</p>
+                                            <p>工作时间：8:30 ~ 18:00 </p>
+                                            <p>工作日（周一至周五） </p> -->
+                                        </div>
+                                    </div>
+                                    <form action="/plus/diy.php"
+                                        enctype="multipart/form-data"
+                                        id="form"
+                                        method="post">
+                                        <input type="hidden" name="action"
+                                            value="post"
+                                            />
+                                        <input type="hidden" name="diyid"
+                                            value="1"
+                                            />
+                                        <input type="hidden" name="do"
+                                            value="2" />
+                                        <div class="messageRow_2">
+                                            <div class="messageBox">
+                                                <div class="fromList">
+                                                    <input type="text"
+                                                        placeholder="您的姓名"
+                                                        value=""
+                                                        name="full_name"
+                                                        id="full_name" />
+                                                </div>
+                                                <div class="fromList">
+                                                    <input type="text"
+                                                        placeholder="联系电话"
+                                                        value=""
+                                                        name="mobile"
+                                                        id="mobile" />
+                                                </div>
+                                                <div class="fromList">
+                                                    <input type="text"
+                                                        placeholder="电子邮箱"
+                                                        value=""
+                                                        name="email"
+                                                        id="email" />
+                                                </div>
+                                                <div class="fromList">
+                                                    <input type="text"
+                                                        placeholder="公司名称"
+                                                        value=""
+                                                        name="company"
+                                                        id="company"
+                                                        />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="messageRow_3">
+                                            <div class="messageBox">
+                                                <div class="fromList">
+                                                    <textarea
+                                                        placeholder="填写详细内容"
+                                                        value="" name="msg"
+                                                        id="msg"></textarea>
+                                                </div>
+                                                <input name="mytime"
+                                                    value=""
+                                                    type="hidden"
+                                                    id="mytime" />
+                                                <script
+                                                    type="text/javascript">
+                                    window.onload = function () {
+                                        var nowDate = new Date()
+                                        var str =
+                                            nowDate.getFullYear() +
+                                            '-' +
+                                            (nowDate.getMonth() + 1) +
+                                            '-' +
+                                            nowDate.getDate() +
+                                            ' ' +
+                                            nowDate.getHours() +
+                                            ':' +
+                                            nowDate.getMinutes() +
+                                            ':' +
+                                            nowDate.getSeconds()
+                                        document.getElementById('mytime').value = str
+                                    }
+                                </script>
+                                                <input
+                                                    type="hidden"
+                                                    name="dede_fields"
+                                                    value="full_name,text;mobile,text;email,text;company,text;msg,multitext;mytime,text"
+                                                    />
+                                                <input type="hidden"
+                                                    name="dede_fieldshash"
+                                                    value="c971c82ee72551f4e9e131a5a98d85bc"
+                                                    />
+                                                <input type="image"
+                                                    name="sumbit"
+                                                    src="images/btn.png" />
+                                                <!-- <span class="fromListInfo">我们将在1个工作日内回复，资料会保密处理。</span> -->
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            Copyright ©Speeder Solutions, LLC &nbsp;&nbsp;
+                        </div>
+                    </div>
+                </div>
+            </body>
+
+        </html>

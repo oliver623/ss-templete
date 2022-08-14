@@ -1,0 +1,305 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta
+            name="viewport"
+            id="viewport"
+            content="width=device-width, initial-scale=1, minimum-scale=1,
+            maximum-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>SS中文官网</title>
+
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+        <script type="text/javascript" src="js/theme_trust.js"></script>
+        <script src="js/banner.js"></script>
+        <style type="text/css">
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .iw_poi_title {
+            color: #cc5522;
+            font-size: 14px;
+            font-weight: bold;
+            overflow: hidden;
+            padding-right: 13px;
+            white-space: nowrap;
+        }
+
+        .iw_poi_content {
+            font: 12px arial, sans-serif;
+            overflow: visible;
+            padding-top: 4px;
+            white-space: -moz-pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+        <script type="text/javascript" src="js/main.js"></script>
+
+        <script type="text/javascript"
+            src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+        <script>
+                const $ = jQuery
+                jQuery(document).ready(function () {
+                    jQuery('#openSidebar').click(function () {
+                        jQuery('.wrapper').toggleClass('openNav')
+                    })
+                    jQuery('#menu a').click(function () {
+                        jQuery('.wrapper').removeClass('openNav')
+                    })
+        
+                    $('#owl-demo')
+                        .owlCarousel({
+                            items: 1,
+                            navigation: true,
+                            navigationText: ['上一个', '下一个'],
+                            autoPlay: 3000,
+                            stopOnHover: true,
+                        })
+                        .hover(
+                            function () {
+                                $('.owl-buttons').show()
+                            },
+                            function () {
+                                $('.owl-buttons').hide()
+                            },
+                        )
+                })
+            </script>
+        <style type="text/css">
+        html,
+        body,
+        wrapper {
+            height: 100%;
+        }
+    </style>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="sidebar">
+                <div class="clearfix k1120">
+                    <div class="navBox" id="openSidebar">
+                        <a href="javascript:void(0)" class="navOpen"></a>
+                    </div>
+                    <div id="menu">
+                        <ul class="clearfix">
+                            <li>
+                                <a href="index.html#home" class="nav_home">
+                                    <span>
+                                        首页
+                                        <br />
+                                        <b>Home</b>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#services"
+                                    class="nav_services">
+                                    <span>
+                                        海外仓服务
+                                        <br />
+                                        <b>Services</b>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#businessProcess"
+                                    class="nav_businessProcess">
+                                    <span>
+                                        业务流程
+                                        <br />
+                                        <b>Process</b>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#layout"
+                                    class="nav_layout">
+                                    <span>
+                                        海外仓布局
+                                        <br />
+                                        <b>Layout</b>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#cooperationCase"
+                                    class="nav_cooperationCase">
+                                    <span>
+                                        合作案例
+                                        <br />
+                                        <b>Cases</b>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#about"
+                                    class="nav_about">
+                                    <span>
+                                        关于我们
+                                        <br />
+                                        <b>About us</b>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#news"
+                                    class="nav_news current">
+                                    <span>
+                                        行业资讯
+                                        <br />
+                                        <b>News</b>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#contact"
+                                    class="nav_contact">
+                                    <span>
+                                        联系我们
+                                        <br />
+                                        <b>Contact us</b>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="pageMain">
+                <div id="header">
+                    <div class="k1120 clearfix"><a href="/" id="logo">logo</a></div>
+                </div>
+                <div id="news" class="scrol-page">
+                    <h2 class="title"><span>布局海外仓，先发制人</span></h2>
+                    <div class="k1120">
+                        <div class="article-css">
+                            <p class="margin-bottom-20">
+                                <span class="margin-right-20">
+                                    发布时间：2022年07月05日</span>
+                                <span>作者：Speeder Solutions</span>
+                            </p>
+                            <p class="text">
+                                <span class="guide">导读：</span>
+                                作为跨境电商卖家，相信大家都知道物流的时效对销量的影响尤为重要。
+                                物流时效短是可以提升买家的购物体验满意度的。在不同店铺中，物流更快的，买家复购率也会更高。
+                            </p>
+                            <div class="img-css">
+                                <img src="ss-images/xwzx/xwwz-1.jpg"
+                                    alt="" class="news-img">
+                            </div>
+                            <div class="second-title">一、跨境电商卖家们大部分都遇到过以下的某些问题：
+                            </div>
+                            <div class="third-title">1、配送时间长</div>
+                            <p class="text">
+                                时效决定服务。国际物流运输里程长，操作环节多。遇跨境电商旺季，单量暴增，
+                                仓库产能不足，造成积压，干线运力有限，舱位不足，物流时效也会受到较大的影响。
+                            </p>
+                            <div class="third-title">2、旺季清关难，意外多</div>
+                            <p class="text">
+                                跨境电商物流通过海关，常出现意外情况，尤其旺季需求加大，清关时间长。这除了给物流和时效性带来很多不定因素之外，
+                                配送时间延长甚至会导致被买家投诉或
+                                者取消订单，给卖家带来巨大的损失。
+                            </p>
+                            <div class="third-title">3、退货和换货困难
+                            </div>
+                            <p class="text">
+                                跨境物流周期相对较长，退换货除了会耗费大量的时间外，还有高昂的反向物流成本。
+                                从卖家的角度看，退货属于一种进口贸易，除了需要缴纳一定的关税外，也可
+                                能被海关部门查验。
+                            </p>
+
+                            <div class="img-css">
+                                <img src="ss-images/xwzx/xwwz-2.jpg"
+                                    alt="" class="news-img">
+                            </div>
+                            <div class="second-title">二、物流界的最强辅助——海外仓
+                            </div>
+                            <p class="text">
+                                海外仓是建立在海外的仓储设施，是支撑跨境电商发展的基础设置，通过大宗运输形式将商品运输到海外仓。
+                                电商平台出单之后，能够直接从海外仓进行分拣、打包和配
+                                送。
+                            </p>
+                            <p>
+                                跨境电商发展日趋成熟，传统跨境物流链路长、环节多，耗时长、稳定性差、价格高、
+                                手续繁琐，促使布局海外仓成为打通跨境物流服务的关键。
+                            </p>
+
+                            <div class="img-css">
+                                <img src="ss-images/xwzx/xwwz-2.jpg"
+                                    alt="" class="news-img">
+                            </div>
+                            <div class="second-title">三、极速美国海外仓给你所需、予你所求
+                            </div>
+                            <p class="text">
+                                从海外仓发货，对于自发货卖家而言，可以避免旺季耗费时间在运输、报关、清关等复杂的操作流程上，
+                                缩短尾端派送时间，提升客户满意度。而对于FBA卖家来说，可提前备货海外仓，
+                                避免爆单时面临物流价格高涨，衣柜难求，断货等风险。
+                            </p>
+                            <div class="margin-left-10">
+                                <div>极速美国海外仓优势服务：</div>
+                                <div>
+                                    （1）一件代发，出入库时效快
+                                </div>
+                                <div>
+                                    （2）退换货处理，承接电子产品售后维修
+                                </div>
+                                <div>
+                                    （3）尾端派送价格优
+                                </div>
+                                <div>
+                                    （4）支持多平台订单，多物流渠道派送
+                                </div>
+                                <div>
+                                    （5）中美双客服，24小时服务
+                                </div>
+                                <div>
+                                    （6）在美华人操作，沟通轻松无忧
+                                </div>
+                                <div>
+                                    （7）可接入erp系统，一站操作便捷
+                                </div>
+                                <div>
+                                    （8）实时同步平台订单，实现一键发货
+                                </div>
+                            </div>
+
+                            <div class="img-css">
+                                <img src="ss-images/xwzx/xwwz-3.jpg"
+                                    alt="" class="news-img">
+                            </div>
+                            <div class="second-title">极速海外仓
+
+
+                            </div>
+                            <p class="text">
+                                极速海外仓（Speeder
+                                Solutions）成立于2015年，凭借在物流运输和客户服务方面的卓越表现，以及在处理退换货和维修方面的专业知识，
+                                我们在美国市场口碑一直处于TOP2的位置。
+                                主营业务包括仓储配送、一件代发、 FBA中转、退仓换标和加工售后等服务。
+                            </p>
+                            <div class="img-css">
+                                <img src="ss-images/xwzx/xwwz-3.jpg"
+                                    alt="" class="news-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    Copyright ©Speeder Solutions, LLC &nbsp;&nbsp;
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,413 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta
+            name="viewport"
+            id="viewport"
+            content="width=device-width, initial-scale=1, minimum-scale=1,
+            maximum-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>SS中文官网</title>
+
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+        <script type="text/javascript" src="js/theme_trust.js"></script>
+        <script src="js/banner.js"></script>
+        <style type="text/css">
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .iw_poi_title {
+            color: #cc5522;
+            font-size: 14px;
+            font-weight: bold;
+            overflow: hidden;
+            padding-right: 13px;
+            white-space: nowrap;
+        }
+
+        .iw_poi_content {
+            font: 12px arial, sans-serif;
+            overflow: visible;
+            padding-top: 4px;
+            white-space: -moz-pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+        <script type="text/javascript" src="js/main.js"></script>
+
+        <script type="text/javascript"
+            src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+        <script>
+                const $ = jQuery
+                jQuery(document).ready(function () {
+                    jQuery('#openSidebar').click(function () {
+                        jQuery('.wrapper').toggleClass('openNav')
+                    })
+                    jQuery('#menu a').click(function () {
+                        jQuery('.wrapper').removeClass('openNav')
+                    })
+        
+                    $('#owl-demo')
+                        .owlCarousel({
+                            items: 1,
+                            navigation: true,
+                            navigationText: ['上一个', '下一个'],
+                            autoPlay: 3000,
+                            stopOnHover: true,
+                        })
+                        .hover(
+                            function () {
+                                $('.owl-buttons').show()
+                            },
+                            function () {
+                                $('.owl-buttons').hide()
+                            },
+                        )
+                })
+            </script>
+        <style type="text/css">
+        html,
+        body,
+        wrapper {
+            height: 100%;
+        }
+    </style>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="sidebar">
+                <div class="clearfix k1120">
+                    <div class="navBox" id="openSidebar">
+                        <a href="javascript:void(0)" class="navOpen"></a>
+                    </div>
+                    <div id="menu">
+                        <ul class="clearfix">
+                            <li>
+                                <a href="index.html#home" class="nav_home">
+                                    <span>
+                                        首页
+                                        <br />
+                                        <b>Home</b>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#services"
+                                    class="nav_services current">
+                                    <span>
+                                        海外仓服务
+                                        <br />
+                                        <b>Services</b>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#businessProcess"
+                                    class="nav_businessProcess">
+                                    <span>
+                                        业务流程
+                                        <br />
+                                        <b>Process</b>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#layout"
+                                    class="nav_layout">
+                                    <span>
+                                        海外仓布局
+                                        <br />
+                                        <b>Layout</b>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#cooperationCase"
+                                    class="nav_cooperationCase">
+                                    <span>
+                                        合作案例
+                                        <br />
+                                        <b>Cases</b>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#about"
+                                    class="nav_about">
+                                    <span>
+                                        关于我们
+                                        <br />
+                                        <b>About us</b>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#news"
+                                    class="nav_news">
+                                    <span>
+                                        行业资讯
+                                        <br />
+                                        <b>News</b>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#contact"
+                                    class="nav_contact">
+                                    <span>
+                                        联系我们
+                                        <br />
+                                        <b>Contact us</b>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="pageMain">
+                <div id="header">
+                    <div class="k1120 clearfix"><a href="/" id="logo">logo</a></div>
+                </div>
+                <div id="services" class="scrol-page">
+                    <h2 class="title"><span>海外仓FBA中转 </span></h2>
+                    <div class="k1120">
+                        <div class="article-css">
+                            <div class="second-title">一、海外仓FBA中转
+
+                            </div>
+                            <div class="service-text">
+                                <div>
+                                    <p>
+                                        海外仓中转补仓，是指卖家将一部分货物存储在海外仓中，当亚马逊FBA需要补货时，
+                                        则让海外仓将货物运输到指定的亚马逊FBA仓库中，在运输时效、费用方面都是更有优势的。
+                                        海外仓在此扮演的是中转站的角色，可以协调解决跨境卖家断货、积压等需求。
+                                    </p>
+                                    <p>
+                                        尤其是旺季的时候，物流费用大幅涨价，并且从中国补货到美国，
+                                        时效很慢，导致卖家容易错过旺季的销售。
+                                    </p>
+                                </div>
+                                <div class="service-img-css">
+                                    <img src="ss-images/xwzx/xwwz-1.jpg"
+                                        alt="" class="service-img">
+                                </div>
+                            </div>
+                            <div class="second-title">二、极速FBA中转优势</div>
+                            <div class="margin-left-10">
+                                <div class="service-icon-word">
+                                    <ul class="k1120 clearfix">
+                                        <li>
+                                            <div
+                                                class="service-combine-img-word">
+                                                <img
+                                                    src="ss-images/service-icon-1.jpg"
+                                                    alt="">
+                                                    响应迅速
+                                            </div>
+                                            <div
+                                                class="text-align-left">
+                                                PDA识别技术，系统信息更新快速，仓库响应迅速
+
+
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div
+                                                class="service-combine-img-word">
+                                                <img
+                                                    src="ss-images/service-icon-2.jpg"
+                                                    alt="">
+                                                    补货及时
+                                            </div>
+                                            <div
+                                                class="text-align-left">
+                                                多仓平均分布，北美本土全覆盖，一站式及时补货
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div
+                                                class="service-combine-img-word">
+                                                <img
+                                                    src="ss-images/service-icon-3.jpg"
+                                                    alt="">
+                                                    中转高效
+                                            </div>
+                                            <div
+                                                class="text-align-left">整合美国本土优势派送资源，中转FBA仓效率高
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div
+                                                class="service-combine-img-word">
+                                                <img
+                                                    src="ss-images/service-icon-4.jpg"
+                                                    alt="">
+                                                    操作灵活
+                                            </div>
+                                            <div
+                                                class="text-align-left">支持整来散走、整来整走、散来整走各种操作需求
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="second-title">三、极速FBA中转服务流程
+                            </div>
+                            <div class="yjda-process">
+                                <div class="yjda-process-list">
+                                    <div class="margin-bottom-20">
+                                        <img src="ss-images/yjdf.jpg"
+                                        alt="">
+                                        卖家在国内备货，把货物运输至极速海外仓
+                                    </div>
+                                    <div class="margin-bottom-20">
+                                        <img src="ss-images/yjdf.jpg"
+                                        alt="">
+                                        货物到库，仓库卸货进行货物盘点、检查、入库
+                                    </div>
+                                    <div class="margin-bottom-20">
+                                        <img src="ss-images/yjdf.jpg"
+                                        alt="">
+                                        回复客户入库情况，货物暂存仓库，等候客户中转单
+                                    </div>
+                                    <div class="margin-bottom-20">
+                                        <img src="ss-images/yjdf.jpg"
+                                        alt="">
+                                        根据客户中转单对货物进行包裹，托盘发货
+                                    </div>
+                                    <div class="margin-bottom-20">
+                                        <img src="ss-images/yjdf.jpg"
+                                        alt="">
+                                        货物出库转入FBA仓，中转完成
+                                    </div>
+                                </div>
+                                <div class="yjdf-img-css">
+                                    <img src="ss-images/xwzx/xwwz-1.jpg"
+                                        alt="" class="yjdf-img">
+                                </div>
+                            </div>
+                            <div class="second-title">四、FBA中转常见问题</div>
+                            <div class="answer-question-css
+                                margin-left-10">
+                                <ul class="k1120 clearfix">
+                                    <li>
+                                        <div
+                                            class="service-combine-img-word">
+                                            <img
+                                                src="ss-images/question.jpg"
+                                                alt="">
+                                                海外仓提供的中转服务只针对FBA仓吗？
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="service-combine-img-word">
+                                            <img
+                                                src="ss-images/answer.jpg"
+                                                alt="">
+                                                FBA仓只提供给在亚马逊平台上的卖家使用。而第三方建立的海外仓一般都没这个要求，
+                                                只要卖家有货，无论在哪个平台售卖，都可以使用海外仓，海外仓都可以提供中转的服务。
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="service-combine-img-word">
+                                            <img
+                                                src="ss-images/question.jpg"
+                                                alt="">
+                                                海外仓对货物的大小、重量以及尺寸等有什么要求？
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="service-combine-img-word">
+                                            <img
+                                                src="ss-images/answer.jpg"
+                                                alt="">
+                                                相对而言，海外仓对于货物的要求不像FBA仓那么严格，
+                                                FBA仓对货品的包装尺寸、重量有严格要求，而海外仓对货品外包装几乎没有要求。
+                                                卖家可根据自己的货物特点进行最优化的打包，最大限度地节省国际费用。海外仓接到货物后，
+                                                可以按FBA包装要求将货物进行分箱，重新打包，贴标等服务，然后按客户指令发至各FBA仓。
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="service-combine-img-word">
+                                            <img
+                                                src="ss-images/question.jpg"
+                                                alt="">
+                                                海外仓可以提前囤货吗？
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="service-combine-img-word">
+                                            <img
+                                                src="ss-images/answer.jpg"
+                                                alt="">
+                                                海外仓是可以提前囤货的，选择海外仓中转，提前将货物发送至海外仓，还可以在旺季期间避免物流高峰，
+                                                节省从国内发货的时间和费用。
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="service-combine-img-word">
+                                            <img
+                                                src="ss-images/question.jpg"
+                                                alt="">
+                                                货物如果较少，海外仓是否也可以提供中转服务？
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="service-combine-img-word">
+                                            <img
+                                                src="ss-images/answer.jpg"
+                                                alt="">
+                                                中转服务对于货物的数量是没有要求的，只要卖家选择了中转服务，海外仓就可以提供相对应的中转服务。
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="service-combine-img-word">
+                                            <img
+                                                src="ss-images/question.jpg"
+                                                alt="">
+                                                卖家如何选择一家靠谱的海外仓服务商？
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="service-combine-img-word">
+                                            <img
+                                                src="ss-images/answer.jpg"
+                                                alt="">
+                                                卖家在选择海外仓服务商的时候，首先是需要结合自己的实际需求，然后是考量海外仓，
+                                                比如海外仓的仓库布局、费用报价、入库出库时效等，对这些因素进行慎重考量。
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    Copyright ©Speeder Solutions, LLC &nbsp;&nbsp;
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

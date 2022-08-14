@@ -1,0 +1,382 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta
+            name="viewport"
+            id="viewport"
+            content="width=device-width, initial-scale=1, minimum-scale=1,
+            maximum-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>SS中文官网</title>
+
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+        <script type="text/javascript" src="js/theme_trust.js"></script>
+        <script src="js/banner.js"></script>
+        <style type="text/css">
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .iw_poi_title {
+            color: #cc5522;
+            font-size: 14px;
+            font-weight: bold;
+            overflow: hidden;
+            padding-right: 13px;
+            white-space: nowrap;
+        }
+
+        .iw_poi_content {
+            font: 12px arial, sans-serif;
+            overflow: visible;
+            padding-top: 4px;
+            white-space: -moz-pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+        <script type="text/javascript" src="js/main.js"></script>
+
+        <script type="text/javascript"
+            src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+        <script>
+                const $ = jQuery
+                jQuery(document).ready(function () {
+                    jQuery('#openSidebar').click(function () {
+                        jQuery('.wrapper').toggleClass('openNav')
+                    })
+                    jQuery('#menu a').click(function () {
+                        jQuery('.wrapper').removeClass('openNav')
+                    })
+        
+                    $('#owl-demo')
+                        .owlCarousel({
+                            items: 1,
+                            navigation: true,
+                            navigationText: ['上一个', '下一个'],
+                            autoPlay: 3000,
+                            stopOnHover: true,
+                        })
+                        .hover(
+                            function () {
+                                $('.owl-buttons').show()
+                            },
+                            function () {
+                                $('.owl-buttons').hide()
+                            },
+                        )
+                })
+            </script>
+        <style type="text/css">
+        html,
+        body,
+        wrapper {
+            height: 100%;
+        }
+    </style>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="sidebar">
+                <div class="clearfix k1120">
+                    <div class="navBox" id="openSidebar">
+                        <a href="javascript:void(0)" class="navOpen"></a>
+                    </div>
+                    <div id="menu">
+                        <ul class="clearfix">
+                            <li>
+                                <a href="index.html#home" class="nav_home">
+                                    <span>
+                                        首页
+                                        <br />
+                                        <b>Home</b>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#services"
+                                    class="nav_services current">
+                                    <span>
+                                        海外仓服务
+                                        <br />
+                                        <b>Services</b>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#businessProcess"
+                                    class="nav_businessProcess">
+                                    <span>
+                                        业务流程
+                                        <br />
+                                        <b>Process</b>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#layout"
+                                    class="nav_layout">
+                                    <span>
+                                        海外仓布局
+                                        <br />
+                                        <b>Layout</b>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#cooperationCase"
+                                    class="nav_cooperationCase">
+                                    <span>
+                                        合作案例
+                                        <br />
+                                        <b>Cases</b>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#about"
+                                    class="nav_about">
+                                    <span>
+                                        关于我们
+                                        <br />
+                                        <b>About us</b>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#news"
+                                    class="nav_news">
+                                    <span>
+                                        行业资讯
+                                        <br />
+                                        <b>News</b>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#contact"
+                                    class="nav_contact">
+                                    <span>
+                                        联系我们
+                                        <br />
+                                        <b>Contact us</b>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="pageMain">
+                <div id="header">
+                    <div class="k1120 clearfix"><a href="/" id="logo">logo</a></div>
+                </div>
+                <div id="services" class="scrol-page">
+                    <h2 class="title"><span>海外仓服务-仓储配送 </span></h2>
+                    <div class="k1120">
+                        <div class="article-css">
+                            <div class="second-title">一、海外仓仓储配送</div>
+                            <div class="service-text">
+                                <div>
+                                    <p>
+                                        极速海外仓成立于2015年，拥有七年海外仓运营经验并在北美建立了卓越的声誉。
+                                        目前已在美国本土美西、美东、美中自建面积20000㎡的海外仓。所有仓库由中美团队高效管理，
+                                        仓库内重点区域均覆盖摄像头，且配有完备的消防设施与警报系统，确保货物安全。
+                                    </p>
+                                    <p>
+                                        极速海外仓可提供海外仓储服务，包括入库存储、派送出库、
+                                        加工售后等。在尾程配送方面，极速与UPS、FedEx、USPS等快递深度合作，分仓就近发货，物流配送覆盖全美两日达。
+                                    </p>
+                                </div>
+                                <div class="service-img-css">
+                                    <img src="ss-images/xwzx/xwwz-1.jpg"
+                                        alt="" class="service-img">
+                                </div>
+                            </div>
+                            <div class="second-title">二、极速仓储配送优势</div>
+                            <div class="margin-left-10">
+                                <div class="service-icon-word">
+                                    <ul class="k1120 clearfix">
+                                        <li>
+                                            <div
+                                                class="service-combine-img-word">
+                                                <img
+                                                    src="ss-images/service-icon-1.jpg"
+                                                    alt="">
+                                                矩阵级仓群
+                                            </div>
+                                            <div
+                                                class="text-align-left">
+                                                美西、美东、美中四大仓库合理布局，平均分布
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div
+                                                class="service-combine-img-word">
+                                                <img
+                                                    src="ss-images/service-icon-2.jpg"
+                                                    alt="">
+                                                配送时效短
+                                            </div>
+                                            <div
+                                                class="text-align-left">
+                                                多仓联动协同，分仓就近发货，尾程配送时效短
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div
+                                                class="service-combine-img-word">
+                                                <img
+                                                    src="ss-images/service-icon-3.jpg"
+                                                    alt="">
+                                                尾程价格优
+                                            </div>
+                                            <div
+                                                class="text-align-left">多家本地物流服务商深度合作，折扣大渠道价格优
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div
+                                                class="service-combine-img-word">
+                                                <img
+                                                    src="ss-images/service-icon-4.jpg"
+                                                    alt="">
+                                                直接对接仓库
+                                            </div>
+                                            <div
+                                                class="text-align-left">所有仓库均自营仓库，在美华人操作，无沟通障碍
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="second-title">三、仓储配送作业环节
+                            </div>
+                            <p>
+                                仓储管理作业流程主要分为如下几个环节：
+                            </p>
+                            <div class="img-css">
+                                <img src="ss-images/xwzx/xwwz-1.jpg"
+                                    alt="" class="service-img-all">
+                            </div>
+                            <div class="second-title">四、仓储配送常见问题
+                            </div>
+                            <div class="answer-question-css
+                                margin-left-10">
+                                <ul class="k1120 clearfix">
+                                    <li>
+                                        <div
+                                            class="service-combine-img-word">
+                                            <img
+                                                src="ss-images/question.jpg"
+                                                alt="">
+                                            海外仓储服务一般包括哪些内容？
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="service-combine-img-word">
+                                            <img
+                                                src="ss-images/answer.jpg"
+                                                alt="">
+                                            货物存放、托管，商品打包及退货处理，协调物流配送等。
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="service-combine-img-word">
+                                            <img
+                                                src="ss-images/question.jpg"
+                                                alt="">
+                                            海外仓的仓储费用高吗？价格是怎么收费的？
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="service-combine-img-word">
+                                            <img
+                                                src="ss-images/answer.jpg"
+                                                alt="">
+                                            海外仓的仓储费用一般有货物仓储费及产品处理费等，具体根据不同品类、产品大小重量及数量等因素来测算收取，
+                                            相比 FBA的仓储等服务价格更优，而且比国内直邮费用也低得多。
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="service-combine-img-word">
+                                            <img
+                                                src="ss-images/question.jpg"
+                                                alt="">
+                                            海外仓的配送时效如何？
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="service-combine-img-word">
+                                            <img
+                                                src="ss-images/answer.jpg"
+                                                alt="">
+                                            不同海外仓的配送时效是不一样的，配送时效受多方面因素的影响，比如出库效率、配送距离以及配送渠道等。
+                                            就极速海外仓而言，现已能够实现两天配送至全美95%的人口。
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="service-combine-img-word">
+                                            <img
+                                                src="ss-images/question.jpg"
+                                                alt="">
+                                            好的海外仓通常具有哪些特征？
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="service-combine-img-word">
+                                            <img
+                                                src="ss-images/answer.jpg"
+                                                alt="">
+                                            好的海外仓能帮您高效解决电商件仓储配送、FBA中转、一件代发、退仓换标等问题，您只需负责店铺运营，
+                                            其它诸如仓储物流问题可以交给海外仓帮您解决。
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="service-combine-img-word">
+                                            <img
+                                                src="ss-images/question.jpg"
+                                                alt="">
+                                            什么样的产品适合做海外仓？
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="service-combine-img-word">
+                                            <img
+                                                src="ss-images/answer.jpg"
+                                                alt="">
+                                            海外仓并不只适合电商大卖。小规模的卖家，如果销售的产品销量稳定、体量大，
+                                            或者卖家本身对于产品的物流时效要求高的话，也一样可以选择海外仓带来的便利和时效。
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    Copyright ©Speeder Solutions, LLC &nbsp;&nbsp;
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

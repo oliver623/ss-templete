@@ -1,0 +1,388 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta
+            name="viewport"
+            id="viewport"
+            content="width=device-width, initial-scale=1, minimum-scale=1,
+            maximum-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>SS中文官网</title>
+
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+        <script type="text/javascript" src="js/theme_trust.js"></script>
+        <script src="js/banner.js"></script>
+        <style type="text/css">
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .iw_poi_title {
+            color: #cc5522;
+            font-size: 14px;
+            font-weight: bold;
+            overflow: hidden;
+            padding-right: 13px;
+            white-space: nowrap;
+        }
+
+        .iw_poi_content {
+            font: 12px arial, sans-serif;
+            overflow: visible;
+            padding-top: 4px;
+            white-space: -moz-pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+        <script type="text/javascript" src="js/main.js"></script>
+
+        <script type="text/javascript"
+            src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+        <script>
+                const $ = jQuery
+                jQuery(document).ready(function () {
+                    jQuery('#openSidebar').click(function () {
+                        jQuery('.wrapper').toggleClass('openNav')
+                    })
+                    jQuery('#menu a').click(function () {
+                        jQuery('.wrapper').removeClass('openNav')
+                    })
+        
+                    $('#owl-demo')
+                        .owlCarousel({
+                            items: 1,
+                            navigation: true,
+                            navigationText: ['上一个', '下一个'],
+                            autoPlay: 3000,
+                            stopOnHover: true,
+                        })
+                        .hover(
+                            function () {
+                                $('.owl-buttons').show()
+                            },
+                            function () {
+                                $('.owl-buttons').hide()
+                            },
+                        )
+                })
+            </script>
+        <style type="text/css">
+        html,
+        body,
+        wrapper {
+            height: 100%;
+        }
+    </style>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="sidebar">
+                <div class="clearfix k1120">
+                    <div class="navBox" id="openSidebar">
+                        <a href="javascript:void(0)" class="navOpen"></a>
+                    </div>
+                    <div id="menu">
+                        <ul class="clearfix">
+                            <li>
+                                <a href="index.html#home" class="nav_home">
+                                    <span>
+                                        首页
+                                        <br />
+                                        <b>Home</b>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#services"
+                                    class="nav_services current">
+                                    <span>
+                                        海外仓服务
+                                        <br />
+                                        <b>Services</b>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#businessProcess"
+                                    class="nav_businessProcess">
+                                    <span>
+                                        业务流程
+                                        <br />
+                                        <b>Process</b>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#layout"
+                                    class="nav_layout">
+                                    <span>
+                                        海外仓布局
+                                        <br />
+                                        <b>Layout</b>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#cooperationCase"
+                                    class="nav_cooperationCase">
+                                    <span>
+                                        合作案例
+                                        <br />
+                                        <b>Cases</b>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#about"
+                                    class="nav_about">
+                                    <span>
+                                        关于我们
+                                        <br />
+                                        <b>About us</b>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#news"
+                                    class="nav_news">
+                                    <span>
+                                        行业资讯
+                                        <br />
+                                        <b>News</b>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#contact"
+                                    class="nav_contact">
+                                    <span>
+                                        联系我们
+                                        <br />
+                                        <b>Contact us</b>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="pageMain">
+                <div id="header">
+                    <div class="k1120 clearfix"><a href="/" id="logo">logo</a></div>
+                </div>
+                <div id="services" class="scrol-page">
+                    <h2 class="title"><span>海外仓一件代发</span></h2>
+                    <div class="k1120">
+                        <div class="article-css">
+                            <div class="second-title">一、海外仓一件代发</div>
+                            <div class="service-text">
+                                <div>
+                                    <p>
+                                        海外仓一件代发，简单来说，就是跨境电商卖家把货物存储在海外仓库里，
+                                        当买家在亚马逊等平台的店铺里下单后，海外仓根据订单信息对发货物品进行分拣打包并贴上快递单，
+                                        交给快递公司派送到买家手中，这样的一个过程就是海外仓一件代发。
+                                        跨境电商卖家利用海外仓一件代发业务，相比零散地用国际快递走货更能节省成本，提高发货时效性。
+                                    </p>
+                                    <p>
+                                        极速海外仓可提供美国本土一件代发服务，且与UPS、FedEx、USPS等快递深度合作，运费优。
+                                    </p>
+                                </div>
+                                <div class="service-img-css">
+                                    <img src="ss-images/xwzx/xwwz-1.jpg"
+                                        alt="" class="service-img">
+                                </div>
+                            </div>
+                            <div class="second-title">二、极速一件代发优势</div>
+                            <div class="margin-left-10">
+                                <div class="service-icon-word">
+                                    <ul class="k1120 clearfix">
+                                        <li>
+                                            <div
+                                                class="service-combine-img-word">
+                                                <img
+                                                    src="ss-images/service-icon-1.jpg"
+                                                    alt="">
+                                                    发货及时
+                                            </div>
+                                            <div
+                                                class="text-align-left">
+                                                24小时内货物出库
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div
+                                                class="service-combine-img-word">
+                                                <img
+                                                    src="ss-images/service-icon-2.jpg"
+                                                    alt="">
+                                                    时效更短
+                                            </div>
+                                            <div
+                                                class="text-align-left">
+                                                多仓布局就近发货，全美物流配送两日达
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div
+                                                class="service-combine-img-word">
+                                                <img
+                                                    src="ss-images/service-icon-3.jpg"
+                                                    alt="">
+                                                    运费更优
+                                            </div>
+                                            <div
+                                                class="text-align-left">运费最优渠道发货
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div
+                                                class="service-combine-img-word">
+                                                <img
+                                                    src="ss-images/service-icon-4.jpg"
+                                                    alt="">
+                                                    库存准确
+                                            </div>
+                                            <div
+                                                class="text-align-left">高效IT系统管理，百分百库存准确度
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="second-title">三、海外仓一件代发流程</div>
+                            <div class="yjda-process">
+                                <div class="yjda-process-list">
+                                    <div class="margin-bottom-20">
+                                        <img src="ss-images/yjdf.jpg"
+                                        alt="">
+                                        卖家安排快递将商品运至极速美国海外仓
+                                    </div>
+                                    <div class="margin-bottom-20">
+                                        <img src="ss-images/yjdf.jpg"
+                                        alt="">
+                                        仓库接收货物，将货物入库至仓库系统
+                                    </div>
+                                    <div class="margin-bottom-20">
+                                        <img src="ss-images/yjdf.jpg"
+                                        alt="">
+                                        卖家使用系统创建并提交顾客订单
+                                    </div>
+                                    <div class="margin-bottom-20">
+                                        <img src="ss-images/yjdf.jpg"
+                                        alt="">
+                                        仓库接收订单信息并根据订单拣货打包
+                                    </div>
+                                    <div class="margin-bottom-20">
+                                        <img src="ss-images/yjdf.jpg"
+                                        alt="">
+                                        快递上门取件配送，一件代发服务完成
+                                    </div>
+                                </div>
+                                <div class="yjdf-img-css">
+                                    <img src="ss-images/xwzx/xwwz-1.jpg"
+                                        alt="" class="yjdf-img">
+                                </div>
+                            </div>
+                            <div class="second-title">四、一件代发常见问题</div>
+                            <div class="answer-question-css
+                                margin-left-10">
+                                <ul class="k1120 clearfix">
+                                    <li>
+                                        <div
+                                            class="service-combine-img-word">
+                                            <img
+                                                src="ss-images/question.jpg"
+                                                alt="">
+                                                有靠谱的美国海外仓一件代发公司推荐吗？
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="service-combine-img-word">
+                                            <img
+                                                src="ss-images/answer.jpg"
+                                                alt="">
+                                                极速海外仓拥有七年海外仓运营经验，致力于为Amazon、eBay、Wish、Walmart及Shopify等平台卖家，
+                                                提供优质高效的海外仓仓储一件代发服务。
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="service-combine-img-word">
+                                            <img
+                                                src="ss-images/question.jpg"
+                                                alt="">
+                                                一件代发对店铺整体利润有帮助作用吗？
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="service-combine-img-word">
+                                            <img
+                                                src="ss-images/answer.jpg"
+                                                alt="">
+                                                有的。对于电商平台来说，保障运输时效就可以大大提高用户体验。
+                                                平台的销售好评反馈率高，二次复购率也会提高，总体就可以提高店铺销量，增加店铺的整体利润。
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="service-combine-img-word">
+                                            <img
+                                                src="ss-images/question.jpg"
+                                                alt="">
+                                                美国海外仓一件代发配送时效是多久？
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="service-combine-img-word">
+                                            <img
+                                                src="ss-images/answer.jpg"
+                                                alt="">
+                                                具体时效要根据多方面因素做考量，以极速海外仓为例，发美国当地，部分区域可实现次日达，两日达覆盖全美95%人口。
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="service-combine-img-word">
+                                            <img
+                                                src="ss-images/question.jpg"
+                                                alt="">
+                                                一件代发与小包直邮有何区别？
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="service-combine-img-word">
+                                            <img
+                                                src="ss-images/answer.jpg"
+                                                alt="">
+                                                两者之间有着本质的区别。一件代发通常是指跨境电商海外仓一件代发，是借助当地的仓库，
+                                                实现产品在本土派送，从而提高产品的派送时效，增强买家的购物体验。
+                                                小包直邮则是从国内发货送至国外顾客手中，距离长，手续繁琐，配送时效远不如一件代发。
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    Copyright ©Speeder Solutions, LLC &nbsp;&nbsp;
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

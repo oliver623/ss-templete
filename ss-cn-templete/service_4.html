@@ -1,0 +1,381 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta
+            name="viewport"
+            id="viewport"
+            content="width=device-width, initial-scale=1, minimum-scale=1,
+            maximum-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>SS中文官网</title>
+
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+        <script type="text/javascript" src="js/theme_trust.js"></script>
+        <script src="js/banner.js"></script>
+        <style type="text/css">
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .iw_poi_title {
+            color: #cc5522;
+            font-size: 14px;
+            font-weight: bold;
+            overflow: hidden;
+            padding-right: 13px;
+            white-space: nowrap;
+        }
+
+        .iw_poi_content {
+            font: 12px arial, sans-serif;
+            overflow: visible;
+            padding-top: 4px;
+            white-space: -moz-pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+        <script type="text/javascript" src="js/main.js"></script>
+
+        <script type="text/javascript"
+            src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+        <script>
+                const $ = jQuery
+                jQuery(document).ready(function () {
+                    jQuery('#openSidebar').click(function () {
+                        jQuery('.wrapper').toggleClass('openNav')
+                    })
+                    jQuery('#menu a').click(function () {
+                        jQuery('.wrapper').removeClass('openNav')
+                    })
+        
+                    $('#owl-demo')
+                        .owlCarousel({
+                            items: 1,
+                            navigation: true,
+                            navigationText: ['上一个', '下一个'],
+                            autoPlay: 3000,
+                            stopOnHover: true,
+                        })
+                        .hover(
+                            function () {
+                                $('.owl-buttons').show()
+                            },
+                            function () {
+                                $('.owl-buttons').hide()
+                            },
+                        )
+                })
+            </script>
+        <style type="text/css">
+        html,
+        body,
+        wrapper {
+            height: 100%;
+        }
+    </style>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="sidebar">
+                <div class="clearfix k1120">
+                    <div class="navBox" id="openSidebar">
+                        <a href="javascript:void(0)" class="navOpen"></a>
+                    </div>
+                    <div id="menu">
+                        <ul class="clearfix">
+                            <li>
+                                <a href="index.html#home" class="nav_home">
+                                    <span>
+                                        首页
+                                        <br />
+                                        <b>Home</b>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#services"
+                                    class="nav_services current">
+                                    <span>
+                                        海外仓服务
+                                        <br />
+                                        <b>Services</b>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#businessProcess"
+                                    class="nav_businessProcess">
+                                    <span>
+                                        业务流程
+                                        <br />
+                                        <b>Process</b>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#layout"
+                                    class="nav_layout">
+                                    <span>
+                                        海外仓布局
+                                        <br />
+                                        <b>Layout</b>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#cooperationCase"
+                                    class="nav_cooperationCase">
+                                    <span>
+                                        合作案例
+                                        <br />
+                                        <b>Cases</b>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#about"
+                                    class="nav_about">
+                                    <span>
+                                        关于我们
+                                        <br />
+                                        <b>About us</b>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#news"
+                                    class="nav_news">
+                                    <span>
+                                        行业资讯
+                                        <br />
+                                        <b>News</b>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#contact"
+                                    class="nav_contact">
+                                    <span>
+                                        联系我们
+                                        <br />
+                                        <b>Contact us</b>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="pageMain">
+                <div id="header">
+                    <div class="k1120 clearfix"><a href="/" id="logo">logo</a></div>
+                </div>
+                <div id="services" class="scrol-page">
+                    <h2 class="title"><span>海外仓-退仓换标 </span></h2>
+                    <div class="k1120">
+                        <div class="article-css">
+                            <div class="second-title">一、海外仓退仓换标</div>
+                            <div class="service-text">
+                                <div>
+                                    <p>
+                                        海外仓退仓换标，基本上是所有跨境电商卖家都会接触到的。一旦产品遭到用户退货、
+                                        LISTING审核不合格或无效、商品被告侵权，账号被封等等一些情况的时候，就需要用到海外仓退仓换标这一服务。
+                                    </p>
+                                    <p>
+                                        跨境电商卖家把这些无质量问题的产品运到海外仓后，海外仓仓库会安排人员进行换标处理，
+                                        重新打包，这样可以让产品重新再次获得价值及上架平台销售的机会，避免货物损失，从而节省成本。
+                                    </p>
+                                </div>
+                                <div class="service-img-css">
+                                    <img src="ss-images/xwzx/xwwz-1.jpg"
+                                        alt="" class="service-img">
+                                </div>
+                            </div>
+                            <div class="second-title">二、极速退仓换标优势
+                            </div>
+                            <div class="margin-left-10">
+                                <div class="service-icon-word">
+                                    <ul class="k1120 clearfix">
+                                        <li>
+                                            <div
+                                                class="service-combine-img-word">
+                                                <img
+                                                    src="ss-images/service-icon-1.jpg"
+                                                    alt="">
+                                                    经验丰富
+                                            </div>
+                                            <div
+                                                class="text-align-left">
+                                                七年海外仓运营经验，熟悉亚马逊入库要求，懂跨境电商卖家诉求
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div
+                                                class="service-combine-img-word">
+                                                <img
+                                                    src="ss-images/service-icon-2.jpg"
+                                                    alt="">
+                                                    价格公正
+                                            </div>
+                                            <div
+                                                class="text-align-left">
+                                                换标服务报价合理清晰透明，没有隐性收费
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div
+                                                class="service-combine-img-word">
+                                                <img
+                                                    src="ss-images/service-icon-3.jpg"
+                                                    alt="">
+                                                    一货多销
+                                            </div>
+                                            <div
+                                                class="text-align-left">可对接所有主流电商平台，支持多渠道发货
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div
+                                                class="service-combine-img-word">
+                                                <img
+                                                    src="ss-images/service-icon-4.jpg"
+                                                    alt="">
+                                                    沟通无忧
+                                            </div>
+                                            <div
+                                                class="text-align-left">在美华人操作，直接对接仓库，无合作扯皮烦恼
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="second-title">三、极速退仓换标流程
+                            </div>
+                            <div class="yjda-process">
+                                <div class="yjda-process-list">
+                                    <div class="margin-bottom-20">
+                                        <img src="ss-images/yjdf.jpg"
+                                        alt="">
+                                        电商卖家在Amazon后台建立移除订单，把需要换标的产品发到极速海外仓
+                                    </div>
+                                    <div class="margin-bottom-20">
+                                        <img src="ss-images/yjdf.jpg"
+                                        alt="">
+                                        仓库接收包裹，登记到货信息，反馈给电商卖家
+                                    </div>
+                                    <div class="margin-bottom-20">
+                                        <img src="ss-images/yjdf.jpg"
+                                        alt="">
+                                        电商卖家根据反馈的到货信息，下达指令给仓库
+                                    </div>
+                                    <div class="margin-bottom-20">
+                                        <img src="ss-images/yjdf.jpg"
+                                        alt="">
+                                        仓库根据指令对货品进行处理
+                                    </div>
+                                    <div class="margin-bottom-20">
+                                        <img src="ss-images/yjdf.jpg"
+                                        alt="">
+                                        换标处理完后装箱，回传装箱数据给卖家
+                                    </div>
+                                    <div class="margin-bottom-20">
+                                        <img src="ss-images/yjdf.jpg"
+                                        alt="">
+                                        电商卖家根据装箱单在Amazon创建发货计划，并提供箱唛
+                                    </div>
+                                    <div class="margin-bottom-20">
+                                        <img src="ss-images/yjdf.jpg"
+                                        alt="">
+                                        仓库将货品发回FBA，退仓换标流程完成
+                                    </div>
+                                </div>
+                                <div class="yjdf-img-css">
+                                    <img src="ss-images/xwzx/xwwz-1.jpg"
+                                        alt="" class="yjdf-img">
+                                </div>
+                            </div>
+                            <div class="second-title">四、退仓换标常见问题
+                            </div>
+                            <div class="answer-question-css
+                                margin-left-10">
+                                <ul class="k1120 clearfix">
+                                    <li>
+                                        <div
+                                            class="service-combine-img-word">
+                                            <img
+                                                src="ss-images/question.jpg"
+                                                alt="">
+                                                哪些退货商品可以进行退仓换标处理？
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="service-combine-img-word">
+                                            <img
+                                                src="ss-images/answer.jpg"
+                                                alt="">
+                                                不是因为产品本身质量问题而影响销售的，比如产品标签损坏、产品包装破损、客户无条件退换的产品、
+                                                滞销产品、残次品难界定的、店铺关闭、产品转移等，这些产品都可以通过换标后再次进行销售。
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="service-combine-img-word">
+                                            <img
+                                                src="ss-images/question.jpg"
+                                                alt="">
+                                                海外仓可以解决FBA退换货的问题吗？
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="service-combine-img-word">
+                                            <img
+                                                src="ss-images/answer.jpg"
+                                                alt="">
+                                                可以，因为亚马逊是支持客户无条件退换货的。第三方海外仓针对不是因为质量问题退回来的产品，
+                                                替卖家更换标签或者重新包装，然后再次进行销售，可以减少卖家的损失。
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="service-combine-img-word">
+                                            <img
+                                                src="ss-images/question.jpg"
+                                                alt="">
+                                                退仓换标的产品仅支持亚马逊销售吗？
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="service-combine-img-word">
+                                            <img
+                                                src="ss-images/answer.jpg"
+                                                alt="">
+                                                不是的。在海外仓进行换标的产品，一般而言也是支持在其他的电商平台上进行销售的。如果是极速海外仓提供的换标服务，
+                                                换标后的产品除了可以在亚马逊上销售之外，还支持其他平台的销售，我们是支持全渠道发货的例如沃尔玛，Wayfair等。
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    Copyright ©Speeder Solutions, LLC &nbsp;&nbsp;
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
