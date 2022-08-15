@@ -32,24 +32,40 @@ jQuery(window).scroll(function(){
 
 const $form = jQuery('#form')
 $form.on('submit', e => {
-	console.log(`$form.serialize()====`, $form.serializeArray())
-	console.log(`e====`, e)
-
+	$("#submit-btn").attr('disabled', true);
+	jQuery('#submit-btn').addClass('submiting-loading');
 	e.preventDefault()
 	
-	let data =  $form.serializeArray().reduce((pre, cur) => {
+	let params =  $form.serializeArray().reduce((pre, cur) => {
 		pre[cur.name] = cur.value;
 		return pre;
 	}, {})
-	console.log(`data====`, data)
+	let data = {
+		firstName: params.full_name,
+		phoneNumber: params.mobile,
+		email: params.email,
+		companyName: params.company,
+		note: params.msg,
+		cnOverSea: true,
+	}
+	data = JSON.stringify(data)
 	jQuery.ajax({
-		url: $form.action,
+		url: 'http://127.0.0.1:8900/auth/contact-us/add',
 		data,
 		contentType: 'application/json; charset=utf-8',
 		dataType: 'json',
 		type: 'POST',
 		success(result){
 			console.log(`result====`, result)
+			if(result.success){
+				jQuery('#submit-btn').removeClass('submiting-loading');
+				$("#submit-btn").attr('disabled', false);
+				alert('提交成功！')
+			}else {
+				jQuery('#submit-btn').removeClass('submiting-loading');
+				$("#submit-btn").attr('disabled', false);
+				alert('提交失败！'+result.message)
+			}
 		}
 	})
 })

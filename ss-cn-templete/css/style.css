@@ -2039,3 +2039,20 @@ a:hover {
 .text-align-left{
 	text-align: left;
 }
+
+.df-ac{
+	display: flex;
+    align-items: center;
+}
+.submit-css{
+	color: #fff;
+	background: #337ab7;
+	padding: 5px 20px;
+	border: none;
+	border-radius: 5px;
+	font-size: 14px;
+}
+.submiting-loading{
+	background: #77a5cd;
+	cursor: not-allowed;
+}
