@@ -30,6 +30,18 @@ jQuery(window).scroll(function(){
 		scroll_function();
 });
 
+
+function clearData() {
+	inputs = document.getElementsByTagName('input'); // 获取所有input对象
+	for(var i = 0, len = inputs.length; i < len; i++) {
+	   inputs[i].value = ''; // 将每一个input的value置为空
+	}
+	textareas = document.getElementsByTagName('textarea'); // textareas
+	for(var i = 0, len = textareas.length; i < len; i++) {
+	   textareas[i].value = ''; // 将每一个textareas的value置为空
+	}
+ }
+
 const $form = jQuery('#form')
 $form.on('submit', e => {
 	$("#submit-btn").attr('disabled', true);
@@ -61,6 +73,7 @@ $form.on('submit', e => {
 				jQuery('#submit-btn').removeClass('submiting-loading');
 				$("#submit-btn").attr('disabled', false);
 				alert('提交成功！')
+				clearData();
 			}else {
 				jQuery('#submit-btn').removeClass('submiting-loading');
 				$("#submit-btn").attr('disabled', false);
