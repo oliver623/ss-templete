@@ -44,9 +44,16 @@ function clearData() {
 
 const $form = jQuery('#form')
 $form.on('submit', e => {
+	e.preventDefault()
+	let name = document.getElementById('full_name').value;
+	let mobile = document.getElementById('mobile').value;
+	let email = document.getElementById('email').value;
+	if(!name || !mobile || !email) {
+		alert('请填写姓名、电话和邮箱信息。');
+		return;
+	}
 	$("#submit-btn").attr('disabled', true);
 	jQuery('#submit-btn').addClass('submiting-loading');
-	e.preventDefault()
 	
 	let params =  $form.serializeArray().reduce((pre, cur) => {
 		pre[cur.name] = cur.value;
@@ -68,7 +75,6 @@ $form.on('submit', e => {
 		dataType: 'json',
 		type: 'POST',
 		success(result){
-			console.log(`result====`, result)
 			if(result.success){
 				jQuery('#submit-btn').removeClass('submiting-loading');
 				$("#submit-btn").attr('disabled', false);
