@@ -560,7 +560,7 @@ a:hover {
 }
 .servicesBox li p {
 	color: #999;
-	font-size: 12px;
+	font-size: 16px;
 	line-height: 200%;
 }
 .servicesBoxList {
@@ -874,7 +874,7 @@ a:hover {
 }
 .aboutBox p {
 	padding-bottom: 10px;
-	font-size: 12px;
+	font-size: 16px;
 	text-indent: 2em;
 }
 .aboutBox {
@@ -897,17 +897,19 @@ a:hover {
 .newsListBox {
 	margin-left: 50px;
 }
-.newsList h4 {
+.newsList h3 {
 	padding-bottom: 10px;
 	border-bottom: 1px solid #eee;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
+	font-size: 20px;
+	color: #333;
 }
-.newsList h4 a {
-	font-size: 18px;
-	color: #000;
-	font-weight: normal;
+.newsList h3 a {
+	font-size: 20px;
+	color: #333;
+	font-weight: bold;
 	display: block;
 	-webkit-transition: all 0.2s linear;
 	-moz-transition: all 0.2s linear;
@@ -915,14 +917,14 @@ a:hover {
 	-ms-transition: all 0.2s linear;
 	transition: all 0.2s linear;
 }
-.newsList h4 a:hover {
-	color: #a2d5e4;
+.newsList h3 a:hover {
+	color: #0173b9;
 }
 .newsViewText {
 	padding: 20px 0;
 	line-height: 160%;
 	height: 40px;
-	font-size: 12px;
+	font-size: 16px;
 	color: #666;
 	overflow: hidden;
 }
@@ -933,7 +935,7 @@ a:hover {
 	border-radius: 3px;
 	height: 28px;
 	line-height: 28px;
-	font-size: 12px;
+	font-size: 16px;
 	background: #fff;
 	-webkit-transition: all 0.2s linear;
 	-moz-transition: all 0.2s linear;
