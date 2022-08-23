@@ -139,7 +139,7 @@ a:hover {
 	width: 193px;
 	height: 48px;
 	display: inline-block;
-	background: url(../ss-images/logo.pic.jpg) no-repeat center/100%;
+	background: url(../ss-images/logo-1.png) no-repeat center/100%;
 	overflow: hidden;
 	margin: 25px 0 0 0;
 	text-indent: -20em;
@@ -218,7 +218,7 @@ a:hover {
 	#logo {
 		width: 133px;
 		height: 33px;
-		background: url(../ss-images/logo.pic.jpg) no-repeat;
+		background: url(../ss-images/logo-1.png) no-repeat;
 		background-size: 133px 33px;
 		margin: 20px 0 0 0;
 	}
@@ -280,7 +280,7 @@ a:hover {
 	#logo {
 		width: 97px;
 		height: 24px;
-		background: url(../ss-images/logo.pic.jpg) no-repeat;
+		background: url(../ss-images/logo-1.png) no-repeat;
 		background-size: 97px 24px;
 		margin: 10px 0 11px 0;
 		position: fixed;
@@ -691,7 +691,7 @@ a:hover {
 	margin-left: -20px;
 }
 .case li img {
-	max-width: 100%;
+	max-width: 72%;
 }
 .case li .mask {
 	right: 0;
