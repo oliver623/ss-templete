@@ -136,10 +136,10 @@ a:hover {
 }
 
 #logo {
-	width: 193px;
-	height: 48px;
+	width: 212px;
+    height: 59px;
 	display: inline-block;
-	background: url(../ss-images/logo-1.png) no-repeat center/100%;
+	background: url(../ss-images/logo-2.jpg) no-repeat center/100%;
 	overflow: hidden;
 	margin: 25px 0 0 0;
 	text-indent: -20em;
@@ -175,6 +175,7 @@ a:hover {
 #menu a span {
 	text-align: left;
 	display: inline-block;
+	line-height: 33px;
 }
 #menu a b {
 	font-size: 12px;
@@ -218,7 +219,7 @@ a:hover {
 	#logo {
 		width: 133px;
 		height: 33px;
-		background: url(../ss-images/logo-1.png) no-repeat;
+		background: url(../ss-images/logo-2.jpg) no-repeat;
 		background-size: 133px 33px;
 		margin: 20px 0 0 0;
 	}
@@ -278,9 +279,9 @@ a:hover {
 		display: none;
 	}
 	#logo {
-		width: 97px;
-		height: 24px;
-		background: url(../ss-images/logo-1.png) no-repeat;
+		width: 102px;
+    	height: 34px;
+		background: url(../ss-images/logo-2.jpg) no-repeat;
 		background-size: 97px 24px;
 		margin: 10px 0 11px 0;
 		position: fixed;
@@ -1919,6 +1920,7 @@ a:hover {
 	display: flex;
 	justify-content: space-between;
 	margin-left: 10px;
+	align-items: center;
 }
 .yjda-process-list{
 	min-width: 350px;
@@ -2057,4 +2059,60 @@ a:hover {
 .submiting-loading{
 	background: #77a5cd;
 	cursor: not-allowed;
+}
+
+
+.hover-nav-parent {
+	position: relative;
+}
+.hover-nav-parent .hover-nav-container {
+	display: none;
+	position: absolute;
+	left: 0;
+	z-index: 20;
+	border: 1px solid rgb(231, 231, 231);
+	border-radius: 3px;
+	background: rgb(248, 248, 248);
+	padding: 5px;
+}
+.hover-nav-parent:hover .hover-nav-container {
+	display: block;
+	white-space: nowrap;
+}
+.hover-nav-parent:hover .hover-nav-container .hover-nav-item {
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+    color: #337ab7;
+    font-weight: normal;
+}
+.hover-nav-parent:hover .hover-nav-container .hover-nav-item:hover {
+	background-color: #eee;
+}
+.hover-nav-parent:hover .hover-nav-container .hover-nav-item.hover-nav-item-current {
+	background-color: #dedede;
+}
+
+.hover-nav-parent .hover-nav-container .hover-nav-item .hover-nav-sub-container {
+    position: absolute;
+    top: -5px;
+    left: 100%;
+    background: rgb(248, 248, 248);
+    border: 1px solid rgb(231, 231, 231);
+    border-radius: 3px;
+    padding: 5px;
+    display: none;
+}
+.hover-nav-parent .hover-nav-container .hover-nav-item:hover .hover-nav-sub-container {
+    display: block;
+}
+.hover-nav-parent .hover-nav-container .hover-nav-item .hover-nav-sub-container .hover-nav-sub-item {
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+    color: #337ab7;
+    font-weight: normal;
+}
+.hover-nav-parent .hover-nav-container .hover-nav-item .hover-nav-sub-container .hover-nav-sub-item:hover {
+	background-color: #eee;
 }
