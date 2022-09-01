@@ -1,7 +1,7 @@
 jQuery(document).ready(function(){
 	
 //Scrol
-jQuery('#menu li a, #logo').click(function() {
+jQuery('#logo').click(function() {
 	var elementClicked = jQuery(this).attr("href");
 	var destination = jQuery(elementClicked).offset().top;
 	jQuery("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination-0}, 1000 );		   
@@ -88,6 +88,25 @@ $form.on('submit', e => {
 		}
 	})
 })
+
+function createMenuClickFn() {
+	let isShowSubMenu = false
+
+	return el => {
+		el.onclick = e => {
+			const subMenu = e.currentTarget.nextElementSibling
+			if (subMenu) {
+				e.preventDefault()
+				isShowSubMenu = !isShowSubMenu
+				subMenu.style.display = isShowSubMenu ? 'block' : 'none'
+			}
+		}
+	}
+}
+
+document.querySelectorAll('#menu a[class^=nav_]').forEach(el => createMenuClickFn()(el))
+
+
 
 
 //  const io = new IntersectionObserver(entries => {
