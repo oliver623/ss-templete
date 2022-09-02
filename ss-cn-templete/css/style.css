@@ -1992,8 +1992,6 @@ a:hover {
 		padding-bottom: 20px;
 	}
 }
-@media (max-width: 500px) {
-}
 .margin-bottom-20 {
 	margin-bottom: 20px;
 }
@@ -2125,11 +2123,19 @@ display: block;
 }
 .second-menu{
 	display: none;
-	/* todo pc 要 小瓶不要*/
+	/* todo pc 要 小屏幕不要*/
 	position: absolute;
 	background-color: #fff;
 }
 
+@media screen and (max-width: 770px) {
+	.second-menu{
+	display: none;
+	/* todo pc 要 小屏幕不要*/
+	position: relative;
+	background-color: #fff;
+}
+}
 .second-menu-item{
 	height: 35px;
 	text-align: center;
