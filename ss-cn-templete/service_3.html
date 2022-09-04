@@ -45,8 +45,6 @@
     </style>
         <script type="text/javascript" src="js/main.js"></script>
 
-        <script type="text/javascript"
-            src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
         <script>
                 const $ = jQuery
                 jQuery(document).ready(function () {
@@ -54,6 +52,7 @@
                         jQuery('.wrapper').toggleClass('openNav')
                     })
                     jQuery('#menu a').click(function () {
+                    if (!this.nextElementSibling)
                         jQuery('.wrapper').removeClass('openNav')
                     })
         
