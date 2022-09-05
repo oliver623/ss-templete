@@ -95,7 +95,7 @@ function createMenuClickFn() {
 	return el => {
 		el.onclick = e => {
 			let currentWidth = document.documentElement.clientWidth;
-			if(currentWidth > 770) {
+			if(currentWidth > 767) {
 				return
 			}
 			const subMenu = e.currentTarget.nextElementSibling

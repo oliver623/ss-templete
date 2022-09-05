@@ -1946,7 +1946,7 @@ a:hover {
 	}
 	.yjdf-img{
 		width: auto;
-		height: 250px;
+		height: 215px;
 		margin-left: 10px;
 	}
 }
@@ -1966,7 +1966,7 @@ a:hover {
 	.yjdf-img{
 		width: auto;
 		height: 200px;
-		margin-left: 10px;
+		margin-left: 76px;
 	}
 	.service-text {
 			display: flex;
@@ -2128,7 +2128,7 @@ display: block;
 	background-color: #fff;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 767px) {
 	.second-menu{
 	display: none;
 	/* todo pc 要 小屏幕不要*/
@@ -2159,4 +2159,9 @@ display: block;
 	display: block;
 	width: 100%;
 	height: 100%;
+}
+
+.menu-icon{
+	width: 15px;
+	height: 15px;
 }
