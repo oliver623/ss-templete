@@ -2126,14 +2126,21 @@ display: block;
 	/* todo pc 要 小屏幕不要*/
 	position: absolute;
 	background-color: #fff;
+	width: 110px;
+	 box-shadow: 5px 5px 5px #c6c6cc;
 }
 
+.second-menu-a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
 @media screen and (max-width: 767px) {
 	.second-menu{
 	display: none;
-	/* todo pc 要 小屏幕不要*/
 	position: relative;
 	background-color: #fff;
+	width: auto;
 }
 }
 .second-menu-item{
@@ -2155,13 +2162,37 @@ display: block;
 .second-menu-a:hover{
 	color: #fff;
 }
-.second-menu-a{
-	display: block;
-	width: 100%;
-	height: 100%;
-}
 
 .menu-icon{
 	width: 15px;
 	height: 15px;
+}
+
+.ss-single-img{
+	width: 80%;
+	margin: 0 auto;
+	vertical-align: middle;
+	text-align: center;
+	display: table-cell;
+}
+.img-spec{
+	width: 89%;
+}
+.ss-img-container{
+	background-color: #f8f8ff;
+}
+.ss-img-4n-container{
+	margin-bottom: 50px;
+}
+.ys-img{
+	width: 37%;
+}
+.margin-right-50{
+	margin-right: 50px;
+}
+.bottom-img{
+	display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
 }
